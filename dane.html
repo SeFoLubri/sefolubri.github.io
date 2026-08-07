@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dane techniczne — SeFoLubri</title>
+<meta name="description" content="Parametry techniczne automatycznej olejarki łańcucha SeFoLubri.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13Z" fill="#fff"/></svg>
+      </div>
+      <div class="brand-name"><span style="color:var(--text)">Se</span><span style="color:var(--blue)">Fo</span><span style="color:var(--blue-deep)">Lubri</span></div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('show')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="montaz.html">Montaż</a></li>
+      <li><a href="aplikacja.html">Aplikacja</a></li>
+      <li><a href="dane.html" class="active">Dane techniczne</a></li>
+      <li><a href="historia-powstania.html">Historia powstania</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="https://drive.usercontent.google.com/download?id=1QvqHh__F5-ibLGWXdDCIIiWxTKz9BSBk&export=download&confirm=t" class="nav-cta">Pobierz aplikację</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="mono-eyebrow">Specyfikacja</span>
+    <h1>Dane <em>techniczne</em>.</h1>
+    <p class="lead">Najważniejsze parametry olejarki. Część wartości może się różnić w zależności od wersji urządzenia i konfiguracji.</p>
+  </div>
+</section>
+
+<section class="section" style="border-top:0; padding-top:24px">
+  <div class="wrap">
+    <div class="spec-groups">
+
+      <div class="spec-group reveal">
+        <h3>Zasilanie</h3>
+        <table class="spec-table">
+          <tr><th>Napięcie zasilania</th><td>12 V DC (instalacja motocyklowa)</td></tr>
+          <tr><th>Pobór mocy</th><td>maksymalnie kilkanaście watów podczas impulsu pompy; w spoczynku znikomy</td></tr>
+          <tr><th>Bezpiecznik</th><td>2 A (fabrycznie w zestawie)</td></tr>
+          <tr><th>Zalecane podłączenie</th><td>plus sterowany zapłonem (po przekręceniu stacyjki)</td></tr>
+        </table>
+      </div>
+
+      <div class="spec-group reveal">
+        <h3>Dozowanie</h3>
+        <table class="spec-table">
+          <tr><th>Tryby pracy</th><td>automatyczny (GPS / dystans) oraz ręczny (interwał czasowy)</td></tr>
+          <tr><th>Reakcja na teren</th><td>czujnik ruchu — skraca interwał na szutrze i wybojach</td></tr>
+          <tr><th>Reakcja na deszcz</th><td>czujnik wilgotności — kompensuje wypłukiwanie smaru</td></tr>
+          <tr><th>Warunek smarowania</th><td>praca silnika wykrywana po napięciu (ponad 13,5 V)</td></tr>
+          <tr><th>Aplikator</th><td>zawór jednokierunkowy, na wewnętrzną stronę łańcucha przy zębatce</td></tr>
+        </table>
+      </div>
+
+      <div class="spec-group reveal">
+        <h3>Łączność i sterowanie</h3>
+        <table class="spec-table">
+          <tr><th>Łączność</th><td>Bluetooth Low Energy</td></tr>
+          <tr><th>Aplikacja</th><td>Android</td></tr>
+          <tr><th>Aktualizacje</th><td>w razie potrzeby, bezpośrednio z aplikacji</td></tr>
+          <tr><th>Zabezpieczenie</th><td>kod PIN, zapamiętywanie zaufanych telefonów</td></tr>
+        </table>
+      </div>
+
+      <div class="spec-group reveal">
+        <h3>Zbiornik i olej</h3>
+        <table class="spec-table">
+          <tr><th>Pojemność zbiornika</th><td>200 ml (konfigurowalna w aplikacji)</td></tr>
+          <tr><th>Zasięg zbiornika</th><td>ok. 15 tys. km przy dawce optymalnej</td></tr>
+          <tr><th>Rodzaj oleju</th><td>dowolny, byle nieszkodliwy dla oringów łańcucha</td></tr>
+          <tr><th>Montaż</th><td>opaski / uchwyty, bez ingerencji w elektronikę</td></tr>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="note">
+      <b>Uwaga:</b> parametry mają charakter informacyjny i mogą się różnić w zależności od wersji urządzenia. Szczegóły dotyczące konkretnej serii potwierdzę na stronie <a href="kontakt.html" style="color:var(--blue)">Kontakt</a>.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-col">
+        <div class="foot-brand"><span style="color:var(--text)">Se</span><span style="color:var(--blue)">Fo</span><span style="color:var(--blue-deep)">Lubri</span></div>
+        <p>Automatyczna olejarka łańcucha · Zadbany łańcuch, mniej myślenia.</p>
+      </div>
+      <nav class="foot-nav">
+        <a href="index.html">Start</a>
+        <a href="montaz.html">Montaż</a>
+        <a href="aplikacja.html">Aplikacja</a>
+        <a href="dane.html">Dane techniczne</a>
+        <a href="historia-powstania.html">Historia powstania</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>

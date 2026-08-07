@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplikacja — SeFoLubri</title>
+<meta name="description" content="Co potrafi aplikacja SeFoLubri — pulpit, tryby smarowania, korekty w trasie i zabezpieczenia.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13Z" fill="#fff"/></svg>
+      </div>
+      <div class="brand-name"><span style="color:var(--text)">Se</span><span style="color:var(--blue)">Fo</span><span style="color:var(--blue-deep)">Lubri</span></div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('show')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="montaz.html">Montaż</a></li>
+      <li><a href="aplikacja.html" class="active">Aplikacja</a></li>
+      <li><a href="dane.html">Dane techniczne</a></li>
+      <li><a href="historia-powstania.html">Historia powstania</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="https://drive.usercontent.google.com/download?id=1QvqHh__F5-ibLGWXdDCIIiWxTKz9BSBk&export=download&confirm=t" class="nav-cta">Pobierz aplikację</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero-vignette ph-apka ph-full">
+  <div class="ph-bg-blur"></div>
+  <div class="ph-bg"></div>
+  <div class="ph-fade"></div>
+  <div class="photo-credit">Photo by <a href="https://unsplash.com/@_ks_?utm_source=unsplash&utm_medium=referral" target="_blank" rel="noopener">Angry._.Kat</a> on <a href="https://unsplash.com/photos/man-in-black-jacket-riding-black-motorcycle-on-green-grass-field-during-daytime-or-RxppDRIk?utm_source=unsplash&utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></div>
+  <div class="wrap">
+    <span class="mono-eyebrow">Aplikacja</span>
+    <h1>Cała olejarka <em>w telefonie</em>.</h1>
+    <p class="lead">Aplikacja to pulpit Twojej olejarki: pokazuje, co dzieje się z motocyklem, pozwala zmienić sposób smarowania jednym dotknięciem, a jeśli zajdzie taka potrzeba, pozwala bezpiecznie wgrać nową wersję oprogramowania wprost z telefonu.</p>
+  </div>
+</section>
+
+<!-- PULPIT -->
+<section class="section" style="border-top:0; padding-top:28px">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono-eyebrow">Pulpit</span>
+      <h2>Wszystko na jednym ekranie.</h2>
+      <p>Po połączeniu widzisz stan olejarki i motocykla w jednym miejscu — bez przewijania i szukania. Duże, czytelne cyfry są widoczne nawet w rękawicach i w słońcu.</p>
+    </div>
+
+    <div class="shot-wide reveal">
+      <img src="s-pulpit.jpg" alt="Pulpit aplikacji SeFoLubri — temperatura, napięcie, poziom oleju, tryb pracy">
+    </div>
+
+    <div class="pills">
+      <span class="pill"><b>Poziom oleju</b> w zbiorniku</span>
+      <span class="pill"><b>Napięcie</b> instalacji i stan akumulatora</span>
+      <span class="pill"><b>Temperatura</b> silnika i otoczenia</span>
+      <span class="pill"><b>Wilgotność</b> powietrza</span>
+      <span class="pill"><b>Poziom wstrząsów</b> z czujnika terenu</span>
+      <span class="pill"><b>Dystans</b> do następnej dawki</span>
+      <span class="pill"><b>Zasięg</b> — ile km starczy oleju w zbiorniku</span>
+      <span class="pill"><b>Prędkość</b> z GPS</span>
+      <span class="pill"><b>Czas pracy</b> silnika</span>
+      <span class="pill"><b>Pozostały przebieg</b> do przeglądu łańcucha</span>
+    </div>
+
+    <div class="note" style="margin-top:26px">
+      <b>Jedno spojrzenie i wiesz wszystko:</b> czy olejarka pracuje, ile oleju zostało, jak daleko do kolejnej dawki i czy warunki wymusiły gęstsze smarowanie. Przełączenie między trybem automatycznym a ręcznym to jedno dotknięcie na dole ekranu.
+    </div>
+  </div>
+</section>
+
+<!-- FUNKCJE / ZRZUTY -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono-eyebrow">Funkcje</span>
+      <h2>Ustawiasz raz, korygujesz w sekundę.</h2>
+      <p>Aplikacja daje pełną kontrolę nad dawkowaniem — od podstawowego trybu pracy po precyzyjne dostrojenie czujników pod konkretny motocykl.</p>
+    </div>
+
+    <div class="shots">
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s2-dawka.jpg" alt="Ustawienia dawkowania i korekt sucho/mokro"></div>
+        <div class="shot-txt">
+          <h3>Sposób smarowania</h3>
+          <p>Decydujesz, jak często olejarka podaje olej. W trybie automatycznym co zadany dystans, w ręcznym co określony czas.</p>
+          <ul>
+            <li>Dawka co wybraną liczbę kilometrów</li>
+            <li>Osobny, gęstszy interwał na teren</li>
+            <li>Korekta sucho / mokro jednym dotknięciem</li>
+            <li>Każdy krok to niewielka zmiana, więc trudno przesadzić</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s3-zbiornik.jpg" alt="Zbiornik oleju, tankowanie i przypomnienie o przeglądzie"></div>
+        <div class="shot-txt">
+          <h3>Zbiornik i przeglądy</h3>
+          <p>Aplikacja pilnuje poziomu oleju i przypomina o obsłudze łańcucha, żebyś nie musiał tego pamiętać.</p>
+          <ul>
+            <li>Po dolaniu oleju jeden przycisk ustawia pełny zbiornik</li>
+            <li>Przypomnienie o przeglądzie łańcucha po przebiegu</li>
+            <li>Zalewanie układu po montażu lub wymianie przewodu</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s4-czujniki.jpg" alt="Kalibracja czujników — czułość terenu i próg deszczu"></div>
+        <div class="shot-txt">
+          <h3>Dostrojenie pod Twój motocykl</h3>
+          <p>Każda maszyna inaczej przenosi drgania. Możesz ustawić, co olejarka ma uznać za trudny teren, obserwując wskazania na żywo podczas jazdy.</p>
+          <ul>
+            <li>Czułość wykrywania nierówności z podglądem na żywo</li>
+            <li>Wilgotność, przy której włącza się tryb deszczowy</li>
+            <li>Kalibracja czujnika ruchu na postoju</li>
+            <li>Wybór, które czujniki temperatury są zamontowane</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s5-korekty.jpg" alt="Korekta temperatury, deszczu i przypomnienie po kroplach"></div>
+        <div class="shot-txt">
+          <h3>Precyzyjne korekty</h3>
+          <p>Drobne poprawki, które sprawiają, że olejarka pracuje dokładnie tak, jak chcesz.</p>
+          <ul>
+            <li>Dostrojenie odczytu temperatury, jeśli odbiega od rzeczywistej</li>
+            <li>Siła zagęszczenia smarowania podczas deszczu</li>
+            <li>Przypomnienie o przeglądzie liczone zużyciem oleju — działa też bez GPS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s6-statystyki.jpg" alt="Statystyki — czas pracy i zużycie oleju"></div>
+        <div class="shot-txt">
+          <h3>Statystyki pracy</h3>
+          <p>Widzisz czarno na białym, ile olejarka przepracowała i ile oleju faktycznie zużyła.</p>
+          <ul>
+            <li>Czas bieżącej trasy i łączny czas pracy silnika</li>
+            <li>Zużycie oleju w mililitrach i w kroplach</li>
+            <li>Liczniki można wyzerować w dowolnym momencie</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s7-liczniki.jpg" alt="Liczniki urządzenia i kalibracja napięcia"></div>
+        <div class="shot-txt">
+          <h3>Liczniki i kalibracja</h3>
+          <p>Podgląd postępu do kolejnej kontroli łańcucha oraz możliwość dostrojenia pomiaru napięcia instalacji.</p>
+          <ul>
+            <li>Pasek postępu do najbliższego przeglądu</li>
+            <li>Zerowanie liczników po obsłudze</li>
+            <li>Kalibracja pomiaru napięcia pod własną instalację</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s8-kompensacja.jpg" alt="Kompensacja temperaturowa — własne progi i procenty korekty dawki"></div>
+        <div class="shot-txt">
+          <h3>Kompensacja temperaturowa</h3>
+          <p>W upale olej szybciej spływa z łańcucha, na mrozie trzyma się dłużej — ustawiasz własne progi i procenty korekty, olejarka reaguje sama.</p>
+          <ul>
+            <li>Osobny próg i procent dla zimna i upału</li>
+            <li>Dodatni procent = więcej oleju, ujemny = mniej</li>
+            <li>Środkowy zakres zawsze bez zmian, bez niespodzianek</li>
+            <li>Ustawienia zapisują się w pamięci olejarki na stałe</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="shot-row reveal">
+        <div class="shot-phone"><img src="s1-motyw.jpg" alt="Motyw aplikacji, lista olejark, aktualizacja firmware i PIN"></div>
+        <div class="shot-txt">
+          <h3>Urządzenia, wygląd i bezpieczeństwo</h3>
+          <p>Obsługa kilku motocykli, ewentualne aktualizacje bez odsyłania urządzenia i zabezpieczenie przed obcym telefonem.</p>
+          <ul>
+            <li>Lista olejark z własnymi nazwami — każdy motocykl osobno</li>
+            <li>W razie potrzeby: aktualizacja wprost z telefonu, bez kabla</li>
+            <li>Kod PIN blokujący sterowanie z nieznanego telefonu</li>
+            <li>Motyw jasny, ciemny albo automatyczny wg światła otoczenia</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ZALETY -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono-eyebrow">Dlaczego to wygodne</span>
+      <h2>Zaprojektowana do używania w rękawicach.</h2>
+    </div>
+    <div class="benefits">
+      <div class="benefit reveal">
+        <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+        <div><h3>Czytelna w ruchu</h3><p>Duże cyfry i wyraźne kolory — rzut oka wystarczy, żeby wiedzieć, co się dzieje. Nie musisz zatrzymywać się ani zdejmować rękawic.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <div><h3>Działa też bez telefonu</h3><p>Po skonfigurowaniu olejarka pracuje samodzielnie. Telefon potrzebny jest tylko wtedy, gdy chcesz coś zmienić lub podejrzeć.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v5h-5"/></svg></div>
+        <div><h3>Sprawdzone w praktyce</h3><p>Olejarka działa na oprogramowaniu przetestowanym już w realnym użytkowaniu. Jeśli zajdzie konieczność albo pojawi się potrzeba dopracowania pewnych opcji, opracuję nową wersję — wgrasz ją bezpośrednio i bezpiecznie z aplikacji, bez odsyłania urządzenia.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <div class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+        <div><h3>Tylko dla Ciebie</h3><p>Kod PIN sprawia, że obcy telefon nie posteruje Twoją olejarką. Zaufane telefony łączą się automatycznie, bez wpisywania kodu za każdym razem.</p></div>
+      </div>
+    </div>
+
+    <div class="note" style="border-left-color:var(--amber)">
+      <b>Po instalacji:</b> nadaj aplikacji wymagane uprawnienia i wyłącz dla niej optymalizację baterii. To wymóg systemu Android przy pracy w tle — bez tego telefon usypiałby aplikację i przerywał połączenie z olejarką. Jest to bezpieczne i konieczne do prawidłowego działania.
+    </div>
+
+    <div class="buy-band reveal" style="margin-top:34px">
+      <h2>Pobierz aplikację</h2>
+      <p>Aplikacja na Androida. Zainstaluj ją przed montażem — przyda się już przy zalewaniu układu i pierwszej konfiguracji.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://drive.usercontent.google.com/download?id=1QvqHh__F5-ibLGWXdDCIIiWxTKz9BSBk&export=download&confirm=t">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fff" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 21h16"/></svg>
+          Pobierz aplikację
+        </a>
+        <a class="btn btn-ghost" href="montaz.html">Zobacz instrukcję montażu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-col">
+        <div class="foot-brand"><span style="color:var(--text)">Se</span><span style="color:var(--blue)">Fo</span><span style="color:var(--blue-deep)">Lubri</span></div>
+        <p>Automatyczna olejarka łańcucha · Zadbany łańcuch, mniej myślenia.</p>
+      </div>
+      <nav class="foot-nav">
+        <a href="index.html">Start</a>
+        <a href="montaz.html">Montaż</a>
+        <a href="aplikacja.html">Aplikacja</a>
+        <a href="dane.html">Dane techniczne</a>
+        <a href="historia-powstania.html">Historia powstania</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polityka prywatności — SeFoLubri</title>
+<meta name="description" content="Polityka prywatności automatycznej olejarki łańcucha SeFoLubri i aplikacji mobilnej.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13Z" fill="#fff"/></svg>
+      </div>
+      <div class="brand-name"><span style="color:var(--text)">Se</span><span style="color:var(--blue)">Fo</span><span style="color:var(--blue-deep)">Lubri</span></div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('show')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="montaz.html">Montaż</a></li>
+      <li><a href="aplikacja.html">Aplikacja</a></li>
+      <li><a href="dane.html">Dane techniczne</a></li>
+      <li><a href="historia-powstania.html">Historia powstania</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="https://drive.usercontent.google.com/download?id=1QvqHh__F5-ibLGWXdDCIIiWxTKz9BSBk&export=download&confirm=t" class="nav-cta">Pobierz aplikację</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="mono-eyebrow">Prywatność</span>
+    <h1>Polityka <em>prywatności</em>.</h1>
+    <p class="lead">Krótko: nie zbieram od Ciebie prawie żadnych danych. Poniżej dokładnie wyjaśniam co, po co i jak długo — zgodnie z RODO.</p>
+  </div>
+</section>
+
+<section class="section" style="border-top:0; padding-top:24px">
+  <div class="wrap">
+    <div class="legal">
+
+      <div class="legal-summary">
+        <p>Aplikacja SeFoLubri łączy się z olejarką wyłącznie lokalnie przez Bluetooth. Żadne dane z Twojego telefonu ani olejarki nie trafiają na żaden serwer — nie mam do nich dostępu i ich nie widzę.</p>
+        <p>Jedyny moment, w którym aplikacja łączy się z internetem, to sprawdzenie dostępności nowej wersji oprogramowania.</p>
+      </div>
+
+      <p class="legal-updated">Ostatnia aktualizacja: 25 lipca 2026</p>
+
+      <div class="legal-block">
+        <h3>Administrator danych</h3>
+        <p>Administratorem w rozumieniu RODO jest SeFoLubri. Kontakt w sprawach związanych z ochroną danych i niniejszą polityką: <a href="mailto:sefolubri@gmail.com">sefolubri@gmail.com</a>.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Komunikacja telefon ↔ olejarka</h3>
+        <p>Aplikacja łączy się z olejarką przez Bluetooth (BLE) bezpośrednio, bez pośrednictwa żadnego serwera. Dane odczytywane z urządzenia — temperatura, wilgotność, poziom oleju, przeciążenia, ustawienia — są przetwarzane wyłącznie lokalnie, na Twoim telefonie, żeby wyświetlić je w aplikacji. Nie przechowuję ich poza Twoim telefonem i nie mam do nich dostępu.</p>
+        <p>To samo dotyczy trybu AUTO GPS — lokalizacja używana jest lokalnie do wyliczenia przejechanego dystansu i przekazania go olejarce przez Bluetooth. Nie jest nigdzie wysyłana ani zapisywana poza Twoim telefonem.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Aktualizacje oprogramowania</h3>
+        <p>Aplikacja okresowo sprawdza w internecie, czy dostępna jest nowsza wersja firmware olejarki — w tym celu łączy się z serwerami GitHub. To zapytanie nie zawiera żadnych Twoich danych osobowych, jedynie sprawdza numer aktualnej wersji. Jeśli aktualizacja jest dostępna, paczka pobierana jest na telefon, a następnie wysyłana do olejarki przez Bluetooth.</p>
+        <p>Samą aplikację pobierasz ręcznie z Google Dysku — to standardowe pobranie pliku, realizowane przez usługę Google, do której odsyłam linkiem.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Uprawnienia aplikacji na Androidzie</h3>
+        <p>Aplikacja prosi o dostęp do Bluetooth oraz — w zależności od wersji Androida — lokalizacji. To wymóg systemu operacyjnego: Android traktuje skanowanie urządzeń Bluetooth jako funkcję powiązaną z lokalizacją i wymaga tego uprawnienia niezależnie od tego, czy aplikacja faktycznie z lokalizacji korzysta. Używam jej wyłącznie do trybu AUTO GPS, opisanego wyżej, i nigdzie jej nie wysyłam.</p>
+        <p>Aplikacja może też prosić o wyłączenie optymalizacji baterii dla siebie — potrzebne, żeby połączenie Bluetooth nie było zrywane przez system, gdy telefon jest w kieszeni. To ustawienie systemowe, nie zbieranie dodatkowych danych.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Formularz kontaktowy i e-mail</h3>
+        <p>Jeśli napiszesz do mnie przez adres e-mail podany na stronie, przetwarzam podane przez Ciebie dane (np. adres e-mail, treść wiadomości) wyłącznie w celu odpowiedzi na Twoje zapytanie — np. w sprawie zamówienia, gwarancji lub wsparcia technicznego. Podstawą przetwarzania jest tu Twoja dobrowolna zgoda, wyrażona przez wysłanie wiadomości, oraz mój prawnie uzasadniony interes w postaci obsługi klienta.</p>
+        <p>Jeśli w przyszłości formularz kontaktowy na stronie zacznie działać przez zewnętrznego dostawcę (np. Formspree), zaktualizuję tę sekcję o szczegóły dotyczące tego podmiotu.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Pliki cookies</h3>
+        <p>Nasza strona internetowa nie używa plików cookies ani narzędzi analitycznych/śledzących. Jest to statyczna strona hostowana na GitHub Pages.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Twoje prawa</h3>
+        <p>Zgodnie z RODO przysługuje Ci prawo do: dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu wobec ich przetwarzania. Przysługuje Ci również prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO), jeśli uznasz, że przetwarzanie narusza przepisy.</p>
+        <p>W praktyce — skoro nie gromadzę danych z Twojej olejarki ani telefonu — najczęstszym powodem kontaktu w tej sprawie będzie chęć usunięcia korespondencji e-mail, którą do mnie wysłałeś/aś. Wystarczy napisać na <a href="mailto:sefolubri@gmail.com">sefolubri@gmail.com</a>.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Zmiany w polityce</h3>
+        <p>Jeśli zmienię sposób działania aplikacji lub strony w sposób wpływający na prywatność (np. dodam formularz kontaktowy przez zewnętrznego dostawcę), zaktualizuję tę stronę i datę na jej górze.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Kontakt</h3>
+        <p>Pytania dotyczące tej polityki lub przetwarzania danych możesz kierować na <a href="mailto:sefolubri@gmail.com">sefolubri@gmail.com</a>.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-col">
+        <div class="foot-brand"><span style="color:var(--text)">Se</span><span style="color:var(--blue)">Fo</span><span style="color:var(--blue-deep)">Lubri</span></div>
+        <p>Automatyczna olejarka łańcucha · Zadbany łańcuch, mniej myślenia.</p>
+      </div>
+      <nav class="foot-nav">
+        <a href="index.html">Start</a>
+        <a href="montaz.html">Montaż</a>
+        <a href="dane.html">Dane techniczne</a>
+        <a href="historia-powstania.html">Historia powstania</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
