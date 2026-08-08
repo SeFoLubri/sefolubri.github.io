@@ -5,6 +5,7 @@
 :root{
   --bg:#0d1017; --surface:#151b24; --surface2:#1c2430;
   --line:#232c39; --blue:#3d8bfd; --blue-deep:#1c69d4;
+  --navy:#0a3a8c;
   --amber:#f0a830; --green:#00d880;
   --text:#e6edf3; --muted:#8b97a6; --dim:#5b6673;
 }
@@ -38,6 +39,24 @@ header{position:sticky; top:0; z-index:50;
 .brand-name{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; letter-spacing:.02em}
 .brand-expand{font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:15px;
   letter-spacing:.04em; color:var(--muted); margin:6px 0 10px}
+
+/* Wielki napis SeFoLubri w hero */
+.hero-brand{
+  font-family:'Space Grotesk',sans-serif; font-weight:800;
+  font-size:clamp(52px,9vw,104px); line-height:1; letter-spacing:-.01em;
+  margin:10px 0 6px;
+  text-shadow:0 4px 24px rgba(0,0,0,.9), 0 1px 4px rgba(0,0,0,.9);
+}
+.hero-brand .hb-se{color:#5aa0ff}
+.hero-brand .hb-fo{
+  color:#fff;
+  -webkit-text-stroke:2.5px var(--blue-deep);
+  paint-order:stroke fill;
+}
+.hero-brand .hb-lubri{color:#4d90ff}
+@media (max-width:640px){
+  .hero-brand .hb-fo{-webkit-text-stroke:1.5px var(--blue-deep)}
+}
 .nav-links{display:flex; align-items:center; gap:28px; list-style:none}
 .nav-links a{
   font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:500;
@@ -93,19 +112,19 @@ header{position:sticky; top:0; z-index:50;
 .hero-vignette{position:relative; overflow:hidden}
 .hero-vignette .hero-bg{
   position:absolute; inset:-4%;
-  background-image:url('moto-hero.jpg');
+  background-image:url('hero-main.jpg');
   background-size:cover; background-position:center 40%;
   -webkit-mask-image:radial-gradient(ellipse 75% 80% at 55% 45%, #000 32%, transparent 78%);
   mask-image:radial-gradient(ellipse 75% 80% at 55% 45%, #000 32%, transparent 78%);
-  opacity:.60; z-index:0; pointer-events:none;
+  opacity:.48; z-index:0; pointer-events:none;
 }
 .hero-vignette .hero-fade{
   position:absolute; inset:0; z-index:1; pointer-events:none;
-  background:linear-gradient(180deg, rgba(13,16,23,.30) 0%, rgba(13,16,23,.05) 38%, rgba(13,16,23,.9) 100%);
+  background:linear-gradient(115deg, rgba(13,16,23,.82) 0%, rgba(13,16,23,.45) 42%, rgba(13,16,23,.15) 70%, rgba(13,16,23,.85) 100%);
 }
 .hero-vignette .hero>*{position:relative; z-index:2}
-.hero-vignette .hero h1{text-shadow:0 2px 30px rgba(0,0,0,.55)}
-.hero-vignette .hero p.lead{color:#c7d0da; text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.hero-vignette .hero h1{text-shadow:0 3px 30px rgba(0,0,0,.85)}
+.hero-vignette .hero p.lead{color:#dbe4ee; text-shadow:0 2px 16px rgba(0,0,0,.85)}
 
 /* ---------- HERO (strona główna) ---------- */
 .hero{padding:64px 0 48px; display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:center}
@@ -293,8 +312,8 @@ footer{border-top:1px solid var(--line); padding:40px 0 60px; margin-top:40px}
   background:linear-gradient(180deg, rgba(13,16,23,.35) 0%, rgba(13,16,23,.06) 40%, rgba(13,16,23,.92) 100%);
 }
 .hero-vignette .hero>*{position:relative; z-index:2}
-.hero-vignette .hero h1{text-shadow:0 2px 30px rgba(0,0,0,.55)}
-.hero-vignette .hero p.lead{color:#c7d0da; text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.hero-vignette .hero h1{text-shadow:0 3px 30px rgba(0,0,0,.85)}
+.hero-vignette .hero p.lead{color:#dbe4ee; text-shadow:0 2px 16px rgba(0,0,0,.85)}
 
 /* ---------- PODPIS ZDJĘCIA (Unsplash, mały druk w rogu) ---------- */
 .photo-credit{
@@ -529,3 +548,33 @@ footer{border-top:1px solid var(--line); padding:40px 0 60px; margin-top:40px}
 .story-signature .sig-mark svg{width:18px; height:18px}
 .story-signature .sig-name{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; color:var(--text)}
 .story-signature .sig-role{color:var(--dim); font-size:13px}
+
+/* ---------- SKAD NAZWA (name cards) ---------- */
+.name-cards{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.name-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:28px 24px}
+.name-card .nc-word{font-family:'Space Grotesk',sans-serif; font-weight:800; font-size:34px; color:#1a1f28; line-height:1;
+  background:#eef3fa; display:inline-block; padding:6px 14px; border-radius:10px; margin-bottom:14px}
+.name-card .nc-hl-se{color:var(--blue)}
+.name-card .nc-hl-fo{color:#fff; -webkit-text-stroke:1.5px var(--blue-deep); text-shadow:0 0 1px var(--blue-deep)}
+.name-card .nc-hl-lubri{color:var(--navy)}
+.name-card .nc-pl{font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; letter-spacing:.18em; color:var(--blue); margin-bottom:10px}
+.name-card p{color:var(--muted); font-size:15px; line-height:1.5}
+
+/* ---------- SYSTEM CISNIENIOWY (flow) ---------- */
+.sys-flow{display:flex; align-items:stretch; gap:14px; justify-content:center}
+.sys-block{flex:1; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:24px 20px; max-width:320px}
+.sys-block-mid{border-color:rgba(61,139,253,.4); box-shadow:0 0 40px rgba(61,139,253,.10)}
+.sys-ico{width:52px; height:52px; border-radius:12px; background:var(--surface2); display:flex; align-items:center; justify-content:center; margin-bottom:16px}
+.sys-ico svg{width:28px; height:28px}
+.sys-block h3{font-family:'Space Grotesk',sans-serif; font-size:17px; font-weight:700; margin-bottom:12px}
+.sys-block ul{list-style:none; padding:0; margin:0}
+.sys-block li{color:var(--muted); font-size:14px; line-height:1.45; padding-left:18px; position:relative; margin-bottom:7px}
+.sys-block li::before{content:"›"; position:absolute; left:2px; color:var(--blue); font-weight:700}
+.sys-arrow{display:flex; align-items:center; flex:0 0 40px}
+.sys-arrow svg{width:40px; height:24px}
+@media (max-width:860px){
+  .name-cards{grid-template-columns:1fr}
+  .sys-flow{flex-direction:column; align-items:stretch}
+  .sys-block{max-width:none}
+  .sys-arrow{transform:rotate(90deg); align-self:center; flex:0 0 auto; padding:4px 0}
+}
