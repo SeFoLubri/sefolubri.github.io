@@ -382,6 +382,10 @@ footer{border-top:1px solid var(--line); padding:40px 0 60px; margin-top:40px}
 .story-photo{margin:32px 0; border-radius:16px; overflow:hidden; border:1px solid var(--line); background:#000}
 .story-photo img{width:100%; height:auto; display:block}
 .story-photo figcaption{padding:14px 18px; color:var(--muted); font-size:13.5px; background:var(--surface)}
+.story-photos{display:grid; grid-template-columns:1062fr 410fr; gap:16px; margin:32px 0; align-items:stretch}
+.story-photos .story-photo{margin:0; display:flex; flex-direction:column}
+.story-photos .story-photo img{flex:1; min-height:0; object-fit:cover}
+@media (max-width:720px){.story-photos{grid-template-columns:1fr}.story-photos .story-photo img{flex:none}}
 
 /* ---------- PRZERYWNIK (foto na całą szerokość, winieta) ---------- */
 .break-band{position:relative; height:340px; overflow:hidden; margin:8px 0}
