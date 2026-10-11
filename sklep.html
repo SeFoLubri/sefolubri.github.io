@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sklep — SeFoLubri</title>
+<meta name="description" content="Sklep SeFoLubri — automatyczna olejarka łańcucha motocyklowego.">
+<link rel="canonical" href="https://sefolubri.com/sklep.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SeFoLubri">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Sklep — SeFoLubri">
+<meta property="og:description" content="Sklep SeFoLubri — automatyczna olejarka łańcucha motocyklowego.">
+<meta property="og:url" content="https://sefolubri.com/sklep.html">
+<meta property="og:image" content="https://sefolubri.com/hero-main.jpg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0c0-5-7-13-7-13Z" fill="#fff"/></svg>
+      </div>
+      <div class="brand-name"><span class="bse">Se</span><span class="bfo">Fo</span><span class="blubri">Lubri</span></div>
+    </a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('show')">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="montaz.html">Montaż</a></li>
+      <li><a href="aplikacja.html">Aplikacja</a></li>
+      <li><a href="dane.html">Dane techniczne</a></li>
+      <li><a href="historia-powstania.html">Historia powstania</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="https://drive.usercontent.google.com/download?id=1QvqHh__F5-ibLGWXdDCIIiWxTKz9BSBk&export=download&confirm=t" class="nav-cta">Pobierz aplikację</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="section" style="border-top:0; padding-top:64px; min-height:60vh">
+  <div class="wrap">
+    <span class="mono-eyebrow">Sklep</span>
+    <h1 style="margin-bottom:24px">Sklep <em>SeFoLubri</em></h1>
+    <div id="my-store-143930277"></div>
+    <div>
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?143930277&data_platform=code&data_date=2026-10-11" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-143930277");</script>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-col">
+        <div class="foot-brand"><span class="bse">Se</span><span class="bfo">Fo</span><span class="blubri">Lubri</span></div>
+        <p>Automatyczna olejarka łańcucha · Zadbany łańcuch, mniej myślenia.</p>
+      </div>
+      <nav class="foot-nav">
+        <a href="index.html">Start</a>
+        <a href="montaz.html">Montaż</a>
+        <a href="dane.html">Dane techniczne</a>
+        <a href="historia-powstania.html">Historia powstania</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+      </nav>
+    </div>
+    <p class="foot-disclaimer">Producent zastrzega sobie prawo do wprowadzania drobnych zmian w kolejnych egzemplarzach urządzenia — w obudowie, okablowaniu, rodzaju zastosowanych czujników itp. Zmiany te mają na celu wyłącznie doskonalenie produktu i nie wpływają na jego funkcjonalność.</p>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
